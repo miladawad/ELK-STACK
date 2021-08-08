@@ -1,8 +1,8 @@
 # Automated ELK Stack Deployment
 
-_The files in this repository were used to configure the network depicted below._
+The files in this repository were used to configure the network depicted below.
 
-![](diagrams/diagram2)
+![diagram](diagrams/diagram2)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __PLAYBOOK___ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -22,7 +22,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 - Load balancing ensures that the application will be highly _____available, in addition to restricting _____ access to the network.
-- TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+- What aspect of security do load balancers protect? What is the advantage of a jump box?
 
 - web traffic web security availability ,
 - jump box automation , security , network segmentaion , access control
@@ -47,10 +47,10 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - The machines on the internal network are not exposed to the public Internet. 
 
 - Only the jumperbox_provisioners_ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:40.87.111.15
-- TODO: Add whitelisted IP addresses
+- Add whitelisted IP addresses
 
 - Machines within the network can only be accessed by _jumpbox provisioners and workstation public ip____.
-- TODO: Which machine did you allow to access your ELK VM? What was its IP address?
+- Which machine did you allow to access your ELK VM? What was its IP address?
 
 - A summary of the access policies in place can be found in the table below.
 
@@ -66,12 +66,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
 #### Elk Configuration
 
 - Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?
+-  What is the main advantage of automating configuration with Ansible?
 - ansible is used to automate configuration of the elk machine not configuration perfromed manually because ansible is fast and easy to deploy apps
 - you will not need to write the code manually you can use playbook and ansible will figure out how to get your system how you want to install them
 
 The playbook implements the following tasks:
-- TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+-  In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - Specify a different group of machines as well as a different remote user
 - name: Config elk VM with Docker
 -  hosts: elk
@@ -96,7 +96,7 @@ The playbook implements the following tasks:
 
 - The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](diagrams/dockerps)
+![diagram](diagrams/dockerps)
 
 ##### Target Machines & Beats
 - This ELK server is configured to monitor the following machines:
@@ -109,7 +109,7 @@ The playbook implements the following tasks:
 - filebeat
 - metricbeat
 - These Beats allow us to collect the following information from each machine:
-- TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
 - Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
 - Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash
 
