@@ -19,15 +19,4 @@
 - _then i run wget command in a for loop to generate many requests to be viewed by kibana metrics
 - _ [](for i in $(cat .bashrc); do wget -10.0.0.7 --output-document=/dev/null ; wget 10.0.0.8 --output-document=/dev/null ; wget 10.0.0.5 --output-document=/dev/null ; done)
 - _ and i used this command to removed the created files [](rm *)<index.html>
-
-
-#### screenshots
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\1)_      
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\2)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\3)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\4)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\5)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\6)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\7)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\8)_           
-- _[](C:\Windows\System32\scripts\ansible\kibana continues\9)_     
+   
